@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Stop Watch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="wrap">
+        <div id="timer">
+
+            <svg width="260" height="260">
+                <circle class="defaultCircle" cx="125" cy="125" r="120"
+                 stroke="#ff88fb" stroke-width="10" fill="none" stroke-linecap="round" />
+
+            </svg>
+
+            <span id="hour">00</span>
+            <span id="minute">00</span>
+            <span id="secong">00</span>
+            <span id="millisecond">00</span>
+        </div>
+        <p>Your time start now</p>
+        <div class="option">
+            <a id="play" onclick="playfunc();" href="javascript:void(0)"><i class="fa fa-play"></i><i class="fa fa-pause"></i></a>
+            <a id="stop" onclick="stopfunc();" href="javascript:void(0)"><i class="fa fa-stop">Stop</i></a>
+            <a id="reset" onclick="resetfunc();" href="javascript:void(0)"><i class="fa fa-undo"></i></a>
+        </div>
+    </div>
+
+                            
+   
+</body>
+</html>
